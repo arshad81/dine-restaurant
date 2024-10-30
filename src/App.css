@@ -1,38 +1,459 @@
-.App {
+body{
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+}
+.header-section{
+  margin: 0;
+  display: block;
+  background-image: url(/src/images/homepage/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  color: white;
+}
+.header-title{
+  margin: 0;
+  padding: 56% 0 0 0;
+  font-size: 4rem;
+}
+.header-title-2,.highlight-title{
+  padding: 2rem 0 0rem 0;
+  font-size: 3rem;
+}
+.btn{
+  padding: 1rem 1.2rem;
+  border-radius: 0px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  margin: 1rem auto 10rem auto;
+}
+.btn:hover{
+  cursor: pointer;
+  border: 3px solid white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.feature-div{
+  margin: -3rem auto 10rem auto;
+  text-align: center;
+  width: 80%;
+} 
+.feature-heading{
+  color: #212529;
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+.feature-text{
+  color: #2A2E32;
+  margin: 0 1rem;
+}
+.feature-mobile-img{
+  width: 60%;
+  height: auto;
+}
+.feature-desktop-img{
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.highlight-section{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10rem 0 5rem 0;
+}
+.highlight-div{
+  width: 80%;
+  margin: auto;
+}
+.highlight-title{
+  margin: 12px auto;
+}
+.highlight-text{
+  margin: 24px auto 6px auto;
+}
+.highlight-menu-card{
+  margin: 100px auto;
+  padding: 12px;
+}
+.highlight-menu-card:hover{
+  cursor: pointer;
+  border: 1px solid white;
+}
+.menu-title-text{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menu-image-desktop{
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.social-events-section{
+  text-align: center;
+  margin: 100px auto 0px auto;
+}
+.social-div{
+
+}
+.social-event{
+  margin: 48px auto;
+}
+.social-event-header{
+  font-size: 2.2rem;
+}
+.social-event-description{
+  width: 80%;
+  margin: 0 auto 48px auto;
+}
+.social-event-btn{
+  margin: 1rem auto 4rem auto;
+}
+.social-event-text{
+  margin: 1rem auto;
+  padding: 0.2rem;
+  width: fit-content;
+  border-bottom: 1px solid #000;
+}
+.social-event-text:hover{
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+}
+.social-img-desktop{
+  display: none;
+}
+
+.reservation-div{
+  display: block;
+  background-image: url(/src/images/hero-bg-desktop@2x.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+}
+.reservation-text{
+  display: block;
+  padding-top: 5%;
+  color: white;
+  font-size: 2rem;
+}
+.reservation-btn{
+  background-color: transparent;
+  color: white;
+  margin: 2rem;
+}
+
+.footer-div{
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+.address-div,.schedule-div{
+  font-size: 1.2rem;
+  text-align: center;
+  width: 50%;
+  margin:0px auto;
+  padding: 24px 0;
+}
+
+.booking-section{
+  text-align: center;
+  margin-top: -16px;
+  padding: 0;
+}
+.booking-section-header{
+  margin: 0;
+  padding: 0;
+  background-image: url(/src/images/hero-bg-mobile@2x.jpg);
+  background-size: 100%;
+  color: white;
+}
+.booking-header-title{
+  margin: 2rem 0;
+  font-size: 4rem;
+}
+.booking-header-text{
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.booking-header-text-description{
+  width: 60%;
+  margin: auto;
+  font-size: 1.1rem;
+}
+.booking-btn{
+  width: 60%;
+  margin: 4rem auto 8rem auto;
+  padding: 18px 36px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.booking-btn:hover{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.booking-form-div{
+  width: 60%;
+  margin:-10% auto 10% auto;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 1px 5px 30px -2px gray;
+  color: black;
+  display: block;
+  padding-top: 25px;
+}
+input{
+  width: 60%;
+  display: block;
+  margin: 25px auto;
+  padding: 12px 24px;
+}
+.submit-btn{
+  width: 60%;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  margin: 12px auto 36px auto;
+}
+.submit-btn:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.completed-div{
+  display: block;
+  background-image: url(/src/images/booking/hero-bg-mobile@2x.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+.completed-text{
+  display: block;
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-top: 15rem;
+}
+.completed-btn{
+  display: block;
+  margin: 24px auto;
+  padding: 12px 48px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 1px solid white;
+}
+.completed-btn:hover{
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .header-section{
+    background-image: url(/src/images/homepage/hero-bg-tablet@2x.jpg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .reservation-div{
+    display: flex;
+    align-items: center;
+  }
+  .reservation-btn{
+    padding: 12px 34px;
+    margin: 4rem auto;
+  }
+  .reservation-text{
+    padding-top: 0;
+    margin: 0rem auto;
+  }
+  .completed-div{
+    background-image: url(/src/images/booking/hero-bg-tablet@2x.jpg);
+    background-repeat: no-repeat;
+  }
+  .footer-div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .address-div{
+  }
+}
+@media screen and (min-width:1024px) {
+  body{
+    margin: auto;
+  }
+  .app{
+    width: 100%;
+    margin: 0px;
+  }
+  .header-section{
+    background-image: url(/src/images/homepage/hero-bg-desktop.jpg);
+    text-align: left;
+  }
+  .header-text-div{
+    margin: 0 0 0 10%;
+    max-width: 500px;
+  }
+  .header-title{
+    padding: 2rem 0px;
+  }
+
+  .feature-section{
+    width: 100%;
+  }
+  .feature-div{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 0px;
+  }
+  .feature-reverse-div{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .feature-desktop-img{
+    display: block;
+    width: 35%;
+  }
+  .feature-mobile-img{
+    display: none;
+  }
+  .feature-img-desktop-reverse{
+    margin-left: 15%;
+    margin-right: 0px;
+  }
+  .feature-div-text{
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 0px;
+  }
+  .feature-div-text-reverse{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .highlight-section{
+    margin-top: -15%;
+  }
+  .highlight-div{
+    padding: 0px;
+    margin: 0 0px 0 10%;
+    display: flex;
+    align-items: center;
+  }
+  .highlight-text-div{
+    text-align: left;
+    width: 60%;
+  }
+  .highlight-title{
+    font-size: 2.2rem;
+  }
+  .menu{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .menu-image-mobile{
+    width: 100%;
+    margin: 0px;
+    display: none;
+  }
+  .menu-image-desktop{
+    display: inline;
+  }
+  .highlight-menu-card{
+    margin: 20px 0;
+    padding: 12px 0px 12pxs 6px ;
+    display: flex;
+    align-items: center;
+  }
+  .menu-img{
+    
+  }
+  .menu-item-text{
+    margin-left: 24px;
+  }
+
+  .social-div{
+    display: flex;
+    margin: 3rem 0px 3rem 10%;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-image-div{
+    width: 50%;
+  }
+  .social-img-mobile{
+    width: 100%;
+    display: none;
+  }
+  .social-img-desktop{
+    display: inline;
+    width: 100%;
+  }
+  .social-event-div{
+    text-align: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .social-event{
+    margin: 0;
+  }
+  .social-event-btn{
+    margin:1rem 0px 2rem 0;
+    width: 50%;
+  }
+  .social-event-text{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  .social-event-description{
+    margin: 1.5rem 0;
+  }
+
+  .reservation-div{
+    display: flex;
+    align-items: center;
+  }
+  .reservation-btn{
+    padding: 12px 34px;
+    margin: 4rem auto;
+  }
+  .reservation-text{
+    padding-top: 0;
+    margin: 0rem auto;
+  }
+
+  .booking-form-div{
+    margin: -2rem auto 0 auto;
+    max-width: 650px;
+  }
+  .footer-div{
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .address-div{ 
+  }
+  .completed-div{
+    background-image: url(/src/images/booking/hero-bg-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
   }
 }

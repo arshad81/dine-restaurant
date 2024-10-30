@@ -1,12 +1,21 @@
 import React from 'react';
+import { BrowserRouter,Route,Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Booking from './Booking'
+import BookingCompleted from './BookingCompleted'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={App}/>
+      <Route exact path="/booking" component={Booking}/>
+      <Route exact path="/bookingCompleted" component={BookingCompleted}/>
+    </Switch> 
+    </BrowserRouter>  
   </React.StrictMode>,
   document.getElementById('root')
 );
